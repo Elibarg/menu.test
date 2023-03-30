@@ -22,7 +22,7 @@ body
     height: 500px;
     background: #2b2828;
     width: 70px;
-    box-shadow: 10px 0 0 #9906dd;
+    box-shadow: 10px 0 0 #000080;
     border-left: 10px solid #2b2828;
     overflow-x: hidden;
     transition: 0.5s;
@@ -82,7 +82,7 @@ body
 }
 .navegation ul li.active
 {
-background: #9906dd;
+background: #000080;
 
 }
 .navegation ul li.active a::before
@@ -95,7 +95,7 @@ background: #9906dd;
     height: 30px;
     background: #2b2828;
     border-radius: 50%;
-    box-shadow: 15px 15px 0 #9906dd;
+    box-shadow: 15px 15px 0 #000080;
 }
 .navegation ul li.active a::after
 {
@@ -107,5 +107,5 @@ background: #9906dd;
     height: 30px;
     background: #2b2828;
     border-radius: 50%;
-    box-shadow: 15px -15px 0 #9906dd;
+    box-shadow: 15px -15px 0 #000080;
 }
