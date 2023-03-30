@@ -14,14 +14,22 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: black;
 }
 .navegation
 {
     position: relative;
     height: 500px;
     background: #2b2828;
+    width: 70px;
+    box-shadow: 10px 0 0 #9906dd;
+    border-left: 10px solid #2b2828;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.navegation:hover
+{
     width: 300px;
-    box-shadow: 10px 0 0 #ffff00;
 }
 .navegation ul
 {
@@ -37,6 +45,8 @@ body
     position: relative;
     list-style: none;
     width: 100%;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
 }
 .navegation ul li a
 {
@@ -60,4 +70,42 @@ body
     position: relative;
     font-size: 1.5rem;
     z-index: 1;
+}
+.navegation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.navegation ul li.active
+{
+background: #9906dd;
+
+}
+.navegation ul li.active a::before
+{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2b2828;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #9906dd;
+}
+.navegation ul li.active a::after
+{
+    content: '';
+    position: absolute;
+    bottom:-30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #2b2828;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #9906dd;
 }
